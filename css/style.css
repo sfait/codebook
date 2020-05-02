@@ -161,7 +161,8 @@ body {
 }
 
 .code__box {
-    min-height: 150px;
+    width: 100%;
+    height: 250px;
     border: 1.5px solid rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
@@ -173,6 +174,54 @@ body {
 /* links */
 
 /* text.html */
+
+/* tekst 1, tekst 2, tekst 3 */
+
+/* background.html */
+
+/* tło 1 */
+.background-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* pierwszy obrazek musi zawierać czarne elementy */
+    background: url("../img/danbo.jpg"), url("../img/sunset.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* spowoduje, że dwie grafiki nałożą się na siebie */
+    background-blend-mode: color-burn;
+}
+
+/* tło 2 */
+.background-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* pierwszy obrazek musi zawierać czarne elementy */
+    background: url("../img/danbo.jpg"), url("../img/sunset.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* spowoduje, że dwie grafiki nałożą się na siebie */
+    background-blend-mode: hard-light;
+}
+
+/* tło 3 */
+.background-3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* pierwszy obrazek musi zawierać czarne elementy */
+    background: url("../img/danbo.jpg"), url("../img/sunset.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* spowoduje, że dwie grafiki nałożą się na siebie */
+    background-blend-mode: screen;
+}
+
+
 
 /* media queries*/
 @media only screen and (min-width: 990px) {
