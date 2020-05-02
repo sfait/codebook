@@ -175,7 +175,70 @@ body {
 
 /* text.html */
 
-/* tekst 1, tekst 2, tekst 3 */
+/* tekst 1 */
+.neon-wrapper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: brightness(200%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.neon-text {
+    color: #fff;
+    background: #000;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.neon-gradient {
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.neon-dodge {
+    background: radial-gradient(circle, white, #000 35%) center / 25% 25%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+}
+
+@keyframes dodge-area {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+
+/* tekst 2 (kod z tekst 1) */
+.neon-text-2 {
+    color: #fff;
+    background: #000;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.neon-text-2::before {
+    content: "Hello";
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(1px);
+}
 
 /* background.html */
 
