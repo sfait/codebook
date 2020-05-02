@@ -170,7 +170,50 @@ body {
 }
 
 /* notes */
+
 /* links */
+.main__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.links__section {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.links__title {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.links__list {
+    padding: 0;
+    list-style: none;
+}
+
+.links__item {
+    margin-bottom: 0.5rem;
+}
+
+.links__link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links__link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 /* button.html */
 /* przycisk 1 */
 .btn-1 {
@@ -333,6 +376,48 @@ body {
     filter: blur(1px);
 }
 
+/* tekst 4 */
+.text-show__span {
+    color: rgba(39, 39, 39, 1);
+    font-size: 4rem;
+    font-weight: bold;
+    display: table-cell;
+    animation: text-show-animate 5s linear infinite;
+}
+
+.text-show__span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.text-show__span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.text-show__span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.text-show__span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.text-show__span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.text-show__span:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+@keyframes text-show-animate {
+    0% {
+        color: #00b3ff;
+    }
+    50% {
+        color: rgba(39, 39, 39, 1);
+    }
+}
+
 /* tekst 5 */
 .wavy__wrapper {
     position: relative;
@@ -403,6 +488,14 @@ body {
     background-blend-mode: screen;
 }
 
+/* tło 4 */
+.dots {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #1C77D2 1%, transparent 10%), radial-gradient(circle, #1C77D2 1%, transparent 10%);
+    background-size: 6px 6px;
+}
+
 /* media queries*/
 @media only screen and (min-width: 990px) {
 
@@ -448,4 +541,12 @@ body {
 
     /* notes */
     /* links */
+    .main__wrapper {
+        flex-direction: row;
+    }
+
+    .links__section {
+        width: 32%;
+        padding: 2rem 0;
+    }
 }
