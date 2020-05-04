@@ -838,6 +838,26 @@ body {
     background-size: 6px 6px;
 }
 
+/* tło 5 */
+.background-5 {
+    width: 100%;
+    height: 100%;
+    background-color: #1C77D2;
+    background-size: 30px 30px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
+}
+
+/* tło 6 */
+.background-6 {
+    width: 100%;
+    height: 100%;
+    background-color: #1C77D2;
+    background-size: 30px 30px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%),
+        linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 50%, transparent 50%);
+}
+
 /* movie */
 /* .movie-1__wrapper {
     width: 100%;
@@ -853,7 +873,6 @@ body {
 .video-background {
     filter: blur(5px);
 } */
-
 /* another.html */
 /* scroll 1 */
 .scroll-1__item {
@@ -908,6 +927,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .circle-1__span {
     border: 1.5px solid #fff;
     border-radius: 50%;
@@ -921,9 +941,11 @@ body {
         width: 0;
         height: 0;
     }
+
     50 {
         opacity: 1;
     }
+
     100% {
         width: 150px;
         height: 150px;
@@ -939,6 +961,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .circle-2__span {
     border: 1.5px solid #fff;
     border-radius: 50%;
@@ -952,9 +975,11 @@ body {
         width: 0;
         height: 0;
     }
+
     50 {
         opacity: 1;
     }
+
     100% {
         width: 150px;
         height: 150px;
