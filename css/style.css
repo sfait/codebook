@@ -229,6 +229,33 @@ body {
 }
 
 /* notes */
+.section-notes {
+    margin-bottom: 2rem;
+}
+
+.note__title {
+    color: #fead26;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.note__paragraph {
+    line-height: 2;
+}
+
+.note__list {
+    line-height: 2;
+}
+
+.note__link {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.note__link:hover {
+    color: #fead26;
+}
+
 /* links */
 .main__wrapper {
     display: -webkit-box;
@@ -1003,7 +1030,7 @@ body {
     }
 }
 
-/* koła 2 */
+/* koła 2 - kod na kolorowe kółka jest w app.js */
 .circle-2__wrapper {
     width: 100%;
     height: 100%;
